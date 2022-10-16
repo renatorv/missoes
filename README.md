@@ -55,9 +55,11 @@ https://app.gerencianet.com.br/home
 https://www.cloudns.net/main/
 https://certbot.eff.org/
 https://github.com/rodrigorahman/vakinha_burger_api
+https://base64.guru/converter/decode/image
 
 ## DNS
-http://projetomissoes.cloudns.nz/
+appmissoes.cloudns.nz
+129.213.41.165
 
 ## build_runner
 dart pub run build_runner watch
@@ -144,5 +146,13 @@ VALUES (null, 'X-Tudo',
 
 
 
-## Continuar aula...
-https://www.youtube.com/watch?v=4srGQUnL490&list=PLEXr-WZRgPjw5zVjR5YP3mB7cI9pfWmd7&index=4
+## Criar variável de ambiente
+[ https://www.hostinger.com.br/tutoriais/variaveis-de-ambiente-linux ]
+export VAR="value"
+export gerencianetChavePix="adfhajsfhyie8rasfdhiue8ru"
+
+printenv gerencianetChavePix
+
+Desativar o Valor de uma Variável de Ambiente Linux
+unset VAR
+unset gerencianetChavePix

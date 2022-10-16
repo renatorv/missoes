@@ -8,3 +8,6 @@ build/
 certificates/
 
 .env
+
+mysql_data/
+mysql_data
