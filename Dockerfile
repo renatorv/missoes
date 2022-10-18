@@ -1,4 +1,8 @@
-# docker container run --name app_missoes --env-file .env -d renatorv/appmissoes
+# docker build -t renatorv/appmissoes .
+# docker container run -p 8080:8080 --name app_missoes --env-file .env -d renatorv/appmissoes
+# sobe a imagem para o Docker hub como privado => docker push renatorv/appmissoes:latest
+
+##############################################################################################
 # Use latest stable channel SDK.
 FROM dart:stable AS build
 

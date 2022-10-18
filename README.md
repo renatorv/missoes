@@ -170,3 +170,9 @@ export GERENCIANET_CERTIFICADO_KEY="certificates/prod/projeto_missoes_api.key.pe
 
 export GERENCIANET_CHAVE_PIX="0636117e-271c-4096-9c5a-16362d1b38f4"
 export GERENCIANET_URL_WEBHOOK="https://projetomissoes.cloudns.nz/gerencianet/webhook"
+
+
+# LINKS
+https://github.com/Flutterando/dart-backend/blob/master/docker-compose.yaml
+https://blog.4linux.com.br/docker-compose-explicado/
+https://imasters.com.br/banco-de-dados/docker-compose-o-que-e-para-que-serve-o-que-come
