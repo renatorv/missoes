@@ -156,3 +156,17 @@ printenv gerencianetChavePix
 Desativar o Valor de uma Variável de Ambiente Linux
 unset VAR
 unset gerencianetChavePix
+
+export DATABASE_HOST="141.148.49.151"
+export DATABASE_PORT="3306" 
+export DATABASE_USER="root" 
+export DATABASE_PASSWORD="missoes" 
+export DATABASE_NAME="projeto_missoes" 
+export GERENCIANET_CLIENT_ID="Client_Id_8a71a590d3badc50b9c78bd7d1aec445eb9ddb60" 
+export GERENCIANET_CLIENT_SECRET="Client_Secret_701aed3161bf08b0e9a292928f057188b4cb0f5e"	
+export GERENCIANET_URL="https://api-pix.gerencianet.com.br"
+export GERENCIANET_CERTIFICADO_CRT="certificates/prod/projeto_missoes_api.crt.pem" 
+export GERENCIANET_CERTIFICADO_KEY="certificates/prod/projeto_missoes_api.key.pem"
+
+export GERENCIANET_CHAVE_PIX="0636117e-271c-4096-9c5a-16362d1b38f4"
+export GERENCIANET_URL_WEBHOOK="https://projetomissoes.cloudns.nz/gerencianet/webhook"

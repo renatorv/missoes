@@ -22,7 +22,8 @@ class GerencianetPix {
           'nome': name,
         },
         'valor': {'original': value.toStringAsFixed(2)},
-        'chave': env['gerencianetChavePix'],
+        'chave': env['GERENCIANET_CHAVE_PIX'] ?? env['gerencianetChavePix'] ?? '',
+        // 'chave': env['gerencianetChavePix'],
         'solicitacaoPagador': 'Pedido de número: $orderId no App Missões da IBNC.',
         'infoAdicionais': [
           {'nome': 'orderId', 'valor': '$orderId'}
@@ -73,9 +74,11 @@ class GerencianetPix {
   Future<void> registerWebHook() async {
     final gerencianetRestClient = GerencianetRestClient();
     await gerencianetRestClient.auth().put(
-      '/v2/webhook/${env['gerencianetChavePix']}',
+      '/v2/webhook/${env['GERENCIANET_CHAVE_PIX'] ?? env['gerencianetChavePix'] ?? ''}',
+      // '/v2/webhook/${env['gerencianetChavePix']}',
       data: {
-        "webhookUrl": env['gerencianetUrlWebHook'],
+        env['GERENCIANET_URL_WEBHOOK'] ?? env['gerencianetUrlWebHook'] ?? '',
+        // "webhookUrl": env['gerencianetUrlWebHook'],
       },
     );
   }
